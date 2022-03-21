@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import { login, logout } from "./features/user/userSlice";
+import {logout } from "./features/user/userSlice";
 import { useHistory } from "react-router-dom";
 import { selectUser } from "./features/user/userSlice";
 import { addTodo, selectTodos, deleteTodo, deleteAll } from "./features/todo/todoSlice";
@@ -28,7 +28,7 @@ function Todo() {
 
   useEffect(() => {
     console.log("Todos are ", todos);
-  }, [todos.length]);
+  }, [todos?.length]);
 
   return (
     <Container>

@@ -1,9 +1,7 @@
-import React , {useEffect} from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import React  from 'react';
 import './App.css';
 import Login from './Login';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 import { selectUser } from './features/user/userSlice';
 import {BrowserRouter as Router , Route , Switch} from 'react-router-dom'
 import Todo from './Todo';
@@ -11,7 +9,7 @@ import Todo from './Todo';
 
 function App() {
   const user = useSelector(selectUser);
-  
+
   return (
     <div className="App">
       <Router>

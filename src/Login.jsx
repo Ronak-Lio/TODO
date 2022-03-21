@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 import styled from 'styled-components'
-import {useSelector , useDispatch} from "react-redux";
-import { login , logout } from './features/user/userSlice';
+import {useDispatch} from "react-redux";
+import { login } from './features/user/userSlice';
 import {useHistory} from 'react-router-dom'
 
 function Login() {
